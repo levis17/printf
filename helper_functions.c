@@ -1,6 +1,7 @@
 /**
- * Filename: helper_functions
+ * Filename: helper_function
  * Author: En-wai Asare
+ * Description: Performs part of the work of other functions
  */
 
 #include "main.h"
@@ -8,9 +9,10 @@
 
 /**
  * rev_string - reverses a string in situ
- *
  * @s: String to be reversed
- * Return: A pointer to a character
+ * 
+ * Description: Takes a string and reverses it
+ * Return: Return a pointer to a Char
  */
 char *rev_string(char *s)
 {
