@@ -15,6 +15,7 @@ int print_char(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
 {
 	char c = va_arg(types, int);
+
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
 
@@ -48,7 +49,7 @@ int print_string(va_list types, char buffer[],
 	}
 	while (str[length] != '\0')
 		length++;
-	
+
 	if (precision >= 0 && precision < length)
 		length = precision;
 
@@ -176,6 +177,7 @@ int print_binary(va_list types, char buffer[],
 		if (sum || i == 31)
 		{
 			char z = '0' + a[i];
+
 			write(1, &z, 1);
 			count++;
 		}
